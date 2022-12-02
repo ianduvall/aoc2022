@@ -1,4 +1,6 @@
-export const readCalories = (input: string) => {
+export const readCalories = () => {
+  const input = Deno.readTextFileSync("inputs/day1.txt");
+
   const calories = input.split("\n\n").map((elf) => {
     return elf.split("\n").reduce((sum, str) => {
       return sum + Number(str);
