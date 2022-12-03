@@ -1,3 +1,5 @@
+import { sumArray } from "./shared.ts";
+
 const readCalories = () => {
   const input = Deno.readTextFileSync("../inputs/day01.txt");
 
@@ -18,7 +20,7 @@ calories.sort((a, b) => b - a);
 const max = calories[0];
 console.log(`Part 1: ${max}`);
 
-const top3 = calories.slice(0, 3).reduce((sum, num) => sum + num, 0);
+const top3 = sumArray(calories.slice(0, 3));
 console.log(
   `Part 2: ${top3}`,
 );
