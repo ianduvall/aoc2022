@@ -1,4 +1,4 @@
-const _input = await Deno.readTextFile("../inputs/dayXX.txt");
+const _input = await Deno.readTextFile("../inputs/day19.txt");
 
 const part1 = null;
 console.log(`Part 1: ${part1}`);
